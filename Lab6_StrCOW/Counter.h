@@ -1,6 +1,6 @@
 #pragma once
 
-class MyStingCow;
+class MyStringCow;
 
 class Counter {
 	char* m_pStr;
@@ -8,14 +8,13 @@ class Counter {
 	size_t m_owners;
 	static size_t m_counters;
 	static Counter* m_pHead;
-
-	Counter();
+	
+	//Counter();
 	Counter(const char* str);
-
+	~Counter();
 
 	void AddOwner();
 	void DeleteOwner();
-	bool StrFind(const char* str);
 
-	friend class MyStingCow;
+	friend class MyStringCow;
 };
