@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Lab6_StrCOW/Lab6_StrCOW.vcxproj" />
+  <Project Path="Lab6_StrCOW.vcxproj" />
 </Solution>

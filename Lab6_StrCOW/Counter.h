@@ -1,7 +1,5 @@
 #pragma once
 
-class MyStringCow;
-
 class Counter {
 	char* m_pStr;
 	Counter* m_pNext;
@@ -12,9 +10,13 @@ class Counter {
 	//Counter();
 	Counter(const char* str);
 	~Counter();
-
 	void AddOwner();
 	void DeleteOwner();
+	void ReplaceStr(const char* str);
 
 	friend class MyStringCow;
+	friend std::ostream& operator<<(std::ostream& out, const Counter& counter);
+	friend std::ostream& operator<<(std::ostream& out, const MyStringCow& str);
 };
+
+std::ostream& operator<<(std::ostream& out, const Counter& counter);

@@ -2,6 +2,7 @@
 // Т Е М Ы
 // Статические члены класса. Класс с подсчетом ссылок.
 //==============================================================================
+#define _CRT_SECURE_NO_WARNINGS
 #include "MyStringCow.h"
 #include <intrin.h>
 #include <iostream>
@@ -83,7 +84,7 @@ int main()
 		//
 		// 5*. Распечатали строки в алфавитном порядке
 		//
-#if 1
+#if 0
 		MyStringCow::printAlph();		
 		stop
 #endif
